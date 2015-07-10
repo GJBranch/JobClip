@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 //var resourceNotFound = require('./middleware/resourceNotFound');
 
 var middleware = {
-    register : function (Dev) {
+    register : function (JobClip) {
 
         var sourcePath = path.dirname(__dirname),
             client = path.join(sourcePath, '/client/'),
@@ -17,13 +17,13 @@ var middleware = {
                 level: 5
             };
 
-        Dev.use(compression(compressOpts));
-        Dev.use(express.static(client));
-        Dev.use(bodyParser.json());
-        Dev.use(bodyParser.urlencoded());
+        JobClip.use(compression(compressOpts));
+        JobClip.use(express.static(client));
+        JobClip.use(bodyParser.json());
+        JobClip.use(bodyParser.urlencoded());
 
-    //Dev.use(allowCrossDomain);
-    //Dev.use(resourceNotFound);
+    //JobClip.use(allowCrossDomain);
+    //JobClip.use(resourceNotFound);
     }
 };
 

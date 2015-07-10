@@ -3,10 +3,10 @@ describe('Given a Login state', function () {
     var rootScope,
         state,
         injector,
-        stateName = 'dev.login';
+        stateName = 'jobClip.login';
 
     beforeEach(function bootstrapApp() {
-        module('DevApp');
+        module('JobClipApp');
         module('stateMock');
     });
 

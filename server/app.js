@@ -4,16 +4,16 @@ var middleware = require('./middleware');
 var resources = require('./resources');
 
 //app
-var Dev = express();
+var JobClip = express();
 
 //config
-var env = Dev.get('env') || 'development';
+var env = JobClip.get('env') || 'development';
 var config = require('./config/' + env);
 
-middleware.register(Dev);
-resources.register(Dev, config);
+middleware.register(JobClip);
+resources.register(JobClip, config);
 
 console.log('Running: ', env);
 console.log('Port: ', config.port);
 
-Dev.listen(config.port);
+JobClip.listen(config.port);

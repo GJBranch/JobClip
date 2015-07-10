@@ -1,1 +1,1 @@
-{"projectName":"Dev","usingClientFramework":true,"clientFramework":"Angular","usingServerFramework":true,"serverFramework":"Express","testFramework":"mocha + chai","testFrameworks":["mocha + chai"],"testRunner":"mocha","features":["policy","dashboard","login"]}
+{"projectName":"Job Clip","usingClientFramework":true,"clientFramework":"Angular","usingServerFramework":true,"serverFramework":"Express","testFramework":"mocha + chai","testFrameworks":["mocha + chai"],"testRunner":"mocha","features":["policy","dashboard","login"]}

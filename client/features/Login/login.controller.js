@@ -1,6 +1,6 @@
 'use strict';
 
-Dev
+JobClip
     .Login
     .controller('LoginController', [
 		function LoginController($scope) {

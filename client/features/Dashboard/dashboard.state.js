@@ -1,4 +1,4 @@
-Dev
+JobClip
     .App
     .config(['$stateProvider',
     function dashboardState($stateProvider) {
@@ -9,5 +9,5 @@ Dev
                 controllerAs: 'dashboard'
             };
             $stateProvider
-                .state('dev.dashboard', dashboard);
+                .state('jobClip.dashboard', dashboard);
  }]);

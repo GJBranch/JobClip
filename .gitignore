@@ -4,3 +4,4 @@ dist
 .sass-cache
 client/bower_components
 test/reports
+.idea

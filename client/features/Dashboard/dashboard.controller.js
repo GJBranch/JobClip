@@ -1,6 +1,6 @@
 'use strict';
 
-Dev
+JobClip
     .Dashboard
     .controller('DashboardController', [
 		function DashboardController($scope) {

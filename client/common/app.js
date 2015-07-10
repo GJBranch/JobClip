@@ -2,14 +2,14 @@
 var appDependencies = [
     'ui.router',
     'partials',
-    'policy',
+    'posting',
     'dashboard',
     'login'
 ];
 
-var Dev = {
-    App: angular.module('DevApp', appDependencies),
-    Policy: angular.module('policy', []),
+var JobClip = {
+    App: angular.module('JobClip', appDependencies),
+    Posting: angular.module('posting', []),
     Dashboard: angular.module('dashboard', []),
     Login: angular.module('login', [])
 };
@@ -20,24 +20,24 @@ function defaultStateProvider($stateProvider, $urlRouterProvider) {
     $urlRouterProvider
         .otherwise('/');
 
-    var dev = {
+    var jobClip = {
         url: '/',
         templateUrl: 'dist/app.html' //TODO: point to template in build folder depending on how this is compiled?
     };
 
     $stateProvider
-        .state('dev', dev);
+        .state('jobClip', jobClip);
 }
 
 function run($rootScope) {
-    console.log('Dev starting');
+    console.log('JobClip starting');
 }
 
 
-Dev
+JobClip
     .App
     .config(['$stateProvider', '$urlRouterProvider', defaultStateProvider])
     .run(['$rootScope', run]);
 
 
-window.Dev = Dev;
+window.JobClip = JobClip;

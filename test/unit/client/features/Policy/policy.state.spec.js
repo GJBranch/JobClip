@@ -3,10 +3,10 @@ describe('Given a Policy state', function () {
     var rootScope,
         state,
         injector,
-        stateName = 'dev.policy';
+        stateName = 'jobClip.policy';
 
     beforeEach(function bootstrapApp() {
-        module('DevApp');
+        module('JobClipApp');
         module('stateMock');
     });
 

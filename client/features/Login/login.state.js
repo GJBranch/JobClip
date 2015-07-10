@@ -1,4 +1,4 @@
-Dev
+JobClip
     .App
     .config(['$stateProvider',
     function loginState($stateProvider) {
@@ -9,5 +9,5 @@ Dev
                 controllerAs: 'login'
             };
             $stateProvider
-                .state('dev.login', login);
+                .state('jobClip.login', login);
  }]);

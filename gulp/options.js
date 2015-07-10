@@ -4,7 +4,7 @@ var jsHint = JSON.parse(fs.readFileSync(require.resolve('../.jshintrc'), 'utf8')
 
 var options = {
     afr: require('../.afr.json'),
-    appName: 'Dev',
+    appName: 'JobClip',
     appOutput: './client/dist',
     appServer: './server/app.js',
     jsHint: jsHint,

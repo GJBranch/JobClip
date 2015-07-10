@@ -1,7 +1,7 @@
 'use strict';
 var routes = [
     {
-        name: 'Dev',
+        name: 'JobClip',
         url: '/',
         httpMethod: 'get',
         method: 'get'

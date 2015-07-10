@@ -3,10 +3,10 @@ describe('Given a Dashboard state', function () {
     var rootScope,
         state,
         injector,
-        stateName = 'dev.dashboard';
+        stateName = 'jobClip.dashboard';
 
     beforeEach(function bootstrapApp() {
-        module('DevApp');
+        module('JobClipApp');
         module('stateMock');
     });
 
