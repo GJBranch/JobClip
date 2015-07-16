@@ -3,7 +3,7 @@
 JobClip
     .Dashboard
     .controller('DashboardController', [
-		function DashboardController($scope) {
-
+		function DashboardController() {
+            var dashboard = this;
 		}
 	]);

@@ -4,21 +4,22 @@ var appDependencies = [
     'partials',
     'posting',
     'dashboard',
-    'login'
+    'login',
+    'profile'
 ];
 
 var JobClip = {
     App: angular.module('JobClip', appDependencies),
     Posting: angular.module('posting', []),
     Dashboard: angular.module('dashboard', []),
-    Login: angular.module('login', [])
+    Login: angular.module('login', []),
+    Profile: angular.module('profile', [])
 };
 
 
 function defaultStateProvider($stateProvider, $urlRouterProvider) {
 
-    $urlRouterProvider
-        .otherwise('/');
+    $urlRouterProvider.otherwise('/');
 
     var jobClip = {
         url: '/',
@@ -30,6 +31,9 @@ function defaultStateProvider($stateProvider, $urlRouterProvider) {
 }
 
 function run($rootScope) {
+    $rootScope.$on('$stateChangeError', function(){
+       console.log('Error in state transition');
+    });
     console.log('JobClip starting');
 }
 

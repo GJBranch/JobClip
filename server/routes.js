@@ -5,6 +5,12 @@ var routes = [
         url: '/',
         httpMethod: 'get',
         method: 'get'
+    },
+    {
+        name: 'login',
+        url: '/',
+        httpMethod: 'get',
+        method: 'get'
     }
 ];
 

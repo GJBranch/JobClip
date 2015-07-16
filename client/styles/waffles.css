@@ -1,0 +1,1041 @@
+.waffles {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    min-width: 0;
+    width: 100%;
+    overflow: hidden;
+    padding: 0
+}
+
+.waffles .w-1, .waffles .w-10, .waffles .w-11, .waffles .w-12, .waffles .w-13, .waffles .w-14, .waffles .w-15, .waffles .w-16, .waffles .w-17, .waffles .w-18, .waffles .w-2, .waffles .w-3, .waffles .w-4, .waffles .w-5, .waffles .w-6, .waffles .w-7, .waffles .w-8, .waffles .w-9, .waffles .w-auto {
+    display: block;
+    float: left;
+    position: static;
+    box-sizing: border-box;
+    margin: 0 1%
+}
+
+.waffles .w-alpha {
+    margin-left: 0
+}
+
+.waffles .w-omega {
+    margin-right: 0
+}
+
+.waffles .w-alpha ~ .w-omega {
+    clear: right;
+    display: block
+}
+
+.waffles .w-omega ~ .w-alpha {
+    clear: left;
+    display: block
+}
+
+.waffles .w-alpha.w-omega {
+    clear: both;
+    display: block
+}
+
+.waffles .w-auto > .w-alpha, .waffles .w-auto > .w-omega {
+    clear: none
+}
+
+.waffles .w-1 {
+    width: 6.333%
+}
+
+.waffles .w-2 {
+    width: 14.666%
+}
+
+.waffles .w-3 {
+    width: 23%
+}
+
+.waffles .w-4 {
+    width: 31.333%
+}
+
+.waffles .w-5 {
+    width: 39.666%
+}
+
+.waffles .w-6 {
+    width: 48%
+}
+
+.waffles .w-7 {
+    width: 56.333%
+}
+
+.waffles .w-8 {
+    width: 64.666%
+}
+
+.waffles .w-9 {
+    width: 73%
+}
+
+.waffles .w-10 {
+    width: 81.333%
+}
+
+.waffles .w-11 {
+    width: 89.666%
+}
+
+.waffles .w-12 {
+    width: 98%
+}
+
+.waffles .w-1.w-alpha, .waffles .w-1.w-omega {
+    width: 7.333%
+}
+
+.waffles .w-2.w-alpha, .waffles .w-2.w-omega {
+    width: 15.666%
+}
+
+.waffles .w-3.w-alpha, .waffles .w-3.w-omega {
+    width: 24%
+}
+
+.waffles .w-4.w-alpha, .waffles .w-4.w-omega {
+    width: 32.333%
+}
+
+.waffles .w-5.w-alpha, .waffles .w-5.w-omega {
+    width: 40.666%
+}
+
+.waffles .w-6.w-alpha, .waffles .w-6.w-omega {
+    width: 49%
+}
+
+.waffles .w-7.w-alpha, .waffles .w-7.w-omega {
+    width: 57.333%
+}
+
+.waffles .w-9.w-alpha, .waffles .w-9.w-omega {
+    width: 65.666%
+}
+
+.waffles .w-8.w-alpha, .waffles .w-8.w-omega {
+    width: 74%
+}
+
+.waffles .w-10.w-alpha, .waffles .w-10.w-omega {
+    width: 82.333%
+}
+
+.waffles .w-11.w-alpha, .waffles .w-11.w-omega {
+    width: 90.666%
+}
+
+.waffles .w-12.w-alpha.w-omega {
+    width: 100%
+}
+
+.waffles .w-auto:first-child:nth-last-child(1) {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%
+}
+
+.waffles .w-auto:first-child:nth-last-child(2) {
+    margin-left: 0;
+    width: 49%
+}
+
+.waffles .w-auto:first-child:nth-last-child(2) + .w-auto {
+    margin-right: 0;
+    width: 49%
+}
+
+.waffles .w-auto:first-child:nth-last-child(3) {
+    margin-left: 0;
+    width: 32.333333333333336%
+}
+
+.waffles .w-auto:first-child:nth-last-child(3) ~ .w-auto {
+    width: 31.333333333333336%
+}
+
+.waffles .w-auto:first-child:nth-last-child(3) ~ .w-auto:last-child {
+    margin-right: 0;
+    width: 32.333333333333336%
+}
+
+.waffles .w-auto:first-child:nth-last-child(4) {
+    margin-left: 0;
+    width: 24%
+}
+
+.waffles .w-auto:first-child:nth-last-child(4) ~ .w-auto {
+    width: 23%
+}
+
+.waffles .w-auto:first-child:nth-last-child(4) ~ .w-auto:last-child {
+    margin-right: 0;
+    width: 24%
+}
+
+.waffles .w-auto:first-child:nth-last-child(5) {
+    margin-left: 0;
+    width: 19%
+}
+
+.waffles .w-auto:first-child:nth-last-child(5) ~ .w-auto {
+    width: 18%
+}
+
+.waffles .w-auto:first-child:nth-last-child(5) ~ .w-auto:last-child {
+    margin-right: 0;
+    width: 19%
+}
+
+.waffles .w-auto:first-child:nth-last-child(6) {
+    margin-left: 0;
+    width: 15.666666666666668%
+}
+
+.waffles .w-auto:first-child:nth-last-child(6) ~ .w-auto {
+    width: 14.666666666666668%
+}
+
+.waffles .w-auto:first-child:nth-last-child(6) ~ .w-auto:last-child {
+    margin-right: 0;
+    width: 15.666666666666668%
+}
+
+.waffles .w-auto:first-child:nth-last-child(7) {
+    margin-left: 0;
+    width: 13.285714285714286%
+}
+
+.waffles .w-auto:first-child:nth-last-child(7) ~ .w-auto {
+    width: 12.285714285714286%
+}
+
+.waffles .w-auto:first-child:nth-last-child(7) ~ .w-auto:last-child {
+    margin-right: 0;
+    width: 13.285714285714286%
+}
+
+.waffles .w-auto:first-child:nth-last-child(8) {
+    margin-left: 0;
+    width: 11.5%
+}
+
+.waffles .w-auto:first-child:nth-last-child(8) ~ .w-auto {
+    width: 10.5%
+}
+
+.waffles .w-auto:first-child:nth-last-child(8) ~ .w-auto:last-child {
+    margin-right: 0;
+    width: 11.5%
+}
+
+.waffles .w-auto:first-child:nth-last-child(9) {
+    margin-left: 0;
+    width: 10.11111111111111%
+}
+
+.waffles .w-auto:first-child:nth-last-child(9) ~ .w-auto {
+    width: 9.11111111111111%
+}
+
+.waffles .w-auto:first-child:nth-last-child(9) ~ .w-auto:last-child {
+    margin-right: 0;
+    width: 10.11111111111111%
+}
+
+.waffles .w-auto:first-child:nth-last-child(10) {
+    margin-left: 0;
+    width: 9%
+}
+
+.waffles .w-auto:first-child:nth-last-child(10) ~ .w-auto {
+    width: 8%
+}
+
+.waffles .w-auto:first-child:nth-last-child(10) ~ .w-auto:last-child {
+    margin-right: 0;
+    width: 9%
+}
+
+.waffles .w-auto:first-child:nth-last-child(11) {
+    margin-left: 0;
+    width: 8.090909090909092%
+}
+
+.waffles .w-auto:first-child:nth-last-child(11) ~ .w-auto {
+    width: 8%
+}
+
+.waffles .w-auto:first-child:nth-last-child(11) ~ .w-auto:last-child {
+    margin-right: 0;
+    width: 8.090909090909092%
+}
+
+.waffles .w-auto:first-child:nth-last-child(12) {
+    margin-left: 0;
+    width: 7.333333333333334%
+}
+
+.waffles .w-auto:first-child:nth-last-child(12) ~ .w-auto {
+    width: 6.333333333333334%
+}
+
+.waffles .w-auto:first-child:nth-last-child(12) ~ .w-auto:last-child {
+    margin-right: 0;
+    width: 7.333333333333334%
+}
+
+.waffles .w-fix ~ .w-auto {
+    clear: none;
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+    width: auto
+}
+
+.waffles .w-freeze {
+    position: fixed
+}
+
+.waffles .w-freeze.w-alpha {
+    left: 1%
+}
+
+.waffles .w-freeze.w-omega {
+    right: 1%
+}
+
+.waffles .w-freeze.w-alpha.w-omega {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.waffles .w-1.w-fix {
+    width: 8.75px
+}
+
+.waffles .w-1.w-fix.w-alpha {
+    float: left;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-1.w-fix.w-omega {
+    float: right;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-1.w-fix.w-alpha ~ .w-auto, .waffles .w-1.w-fix.w-alpha ~ .w-auto.w-alpha {
+    margin-left: 32.08px
+}
+
+.waffles .w-1.w-fix.w-omega ~ .w-auto {
+    margin-right: 32.08px
+}
+
+.waffles .w-v-1 {
+    margin-top: 8.75px
+}
+
+.waffles .w-v_1 {
+    margin-bottom: 8.75px
+}
+
+.waffles .w-freeze.w-v-1 {
+    top: 8.75px
+}
+
+.waffles .w-freeze.w-v_1 {
+    bottom: 8.75px
+}
+
+.waffles .w-2.w-fix {
+    width: 17.5px
+}
+
+.waffles .w-2.w-fix.w-alpha {
+    float: left;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-2.w-fix.w-omega {
+    float: right;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-2.w-fix.w-alpha ~ .w-auto, .waffles .w-2.w-fix.w-alpha ~ .w-auto.w-alpha {
+    margin-left: 40.83px
+}
+
+.waffles .w-2.w-fix.w-omega ~ .w-auto {
+    margin-right: 40.83px
+}
+
+.waffles .w-v-2 {
+    margin-top: 17.5px
+}
+
+.waffles .w-v_2 {
+    margin-bottom: 17.5px
+}
+
+.waffles .w-freeze.w-v-2 {
+    top: 17.5px
+}
+
+.waffles .w-freeze.w-v_2 {
+    bottom: 17.5px
+}
+
+.waffles .w-3.w-fix {
+    width: 35px
+}
+
+.waffles .w-3.w-fix.w-alpha {
+    float: left;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-3.w-fix.w-omega {
+    float: right;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-3.w-fix.w-alpha ~ .w-auto, .waffles .w-3.w-fix.w-alpha ~ .w-auto.w-alpha {
+    margin-left: 58.33px
+}
+
+.waffles .w-3.w-fix.w-omega ~ .w-auto {
+    margin-right: 58.33px
+}
+
+.waffles .w-v-3 {
+    margin-top: 35px
+}
+
+.waffles .w-v_3 {
+    margin-bottom: 35px
+}
+
+.waffles .w-freeze.w-v-3 {
+    top: 35px
+}
+
+.waffles .w-freeze.w-v_3 {
+    bottom: 35px
+}
+
+.waffles .w-4.w-fix {
+    width: 43.75px
+}
+
+.waffles .w-4.w-fix.w-alpha {
+    float: left;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-4.w-fix.w-omega {
+    float: right;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-4.w-fix.w-alpha ~ .w-auto, .waffles .w-4.w-fix.w-alpha ~ .w-auto.w-alpha {
+    margin-left: 67.08px
+}
+
+.waffles .w-4.w-fix.w-omega ~ .w-auto {
+    margin-right: 67.08px
+}
+
+.waffles .w-v-4 {
+    margin-top: 43.75px
+}
+
+.waffles .w-v_4 {
+    margin-bottom: 43.75px
+}
+
+.waffles .w-freeze.w-v-4 {
+    top: 43.75px
+}
+
+.waffles .w-freeze.w-v_4 {
+    bottom: 43.75px
+}
+
+.waffles .w-5.w-fix {
+    width: 52.5px
+}
+
+.waffles .w-5.w-fix.w-alpha {
+    float: left;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-5.w-fix.w-omega {
+    float: right;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-5.w-fix.w-alpha ~ .w-auto, .waffles .w-5.w-fix.w-alpha ~ .w-auto.w-alpha {
+    margin-left: 75.83px
+}
+
+.waffles .w-5.w-fix.w-omega ~ .w-auto {
+    margin-right: 75.83px
+}
+
+.waffles .w-v-5 {
+    margin-top: 52.5px
+}
+
+.waffles .w-v_5 {
+    margin-bottom: 52.5px
+}
+
+.waffles .w-freeze.w-v-5 {
+    top: 52.5px
+}
+
+.waffles .w-freeze.w-v_5 {
+    bottom: 52.5px
+}
+
+.waffles .w-6.w-fix {
+    width: 70px
+}
+
+.waffles .w-6.w-fix.w-alpha {
+    float: left;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-6.w-fix.w-omega {
+    float: right;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-6.w-fix.w-alpha ~ .w-auto, .waffles .w-6.w-fix.w-alpha ~ .w-auto.w-alpha {
+    margin-left: 93.33px
+}
+
+.waffles .w-6.w-fix.w-omega ~ .w-auto {
+    margin-right: 93.33px
+}
+
+.waffles .w-v-6 {
+    margin-top: 70px
+}
+
+.waffles .w-v_6 {
+    margin-bottom: 70px
+}
+
+.waffles .w-freeze.w-v-6 {
+    top: 70px
+}
+
+.waffles .w-freeze.w-v_6 {
+    bottom: 70px
+}
+
+.waffles .w-7.w-fix {
+    width: 105px
+}
+
+.waffles .w-7.w-fix.w-alpha {
+    float: left;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-7.w-fix.w-omega {
+    float: right;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-7.w-fix.w-alpha ~ .w-auto, .waffles .w-7.w-fix.w-alpha ~ .w-auto.w-alpha {
+    margin-left: 128.33px
+}
+
+.waffles .w-7.w-fix.w-omega ~ .w-auto {
+    margin-right: 128.33px
+}
+
+.waffles .w-v-7 {
+    margin-top: 105px
+}
+
+.waffles .w-v_7 {
+    margin-bottom: 105px
+}
+
+.waffles .w-freeze.w-v-7 {
+    top: 105px
+}
+
+.waffles .w-freeze.w-v_7 {
+    bottom: 105px
+}
+
+.waffles .w-8.w-fix {
+    width: 140px
+}
+
+.waffles .w-8.w-fix.w-alpha {
+    float: left;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-8.w-fix.w-omega {
+    float: right;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-8.w-fix.w-alpha ~ .w-auto, .waffles .w-8.w-fix.w-alpha ~ .w-auto.w-alpha {
+    margin-left: 163.33px
+}
+
+.waffles .w-8.w-fix.w-omega ~ .w-auto {
+    margin-right: 163.33px
+}
+
+.waffles .w-v-8 {
+    margin-top: 140px
+}
+
+.waffles .w-v_8 {
+    margin-bottom: 140px
+}
+
+.waffles .w-freeze.w-v-8 {
+    top: 140px
+}
+
+.waffles .w-freeze.w-v_8 {
+    bottom: 140px
+}
+
+.waffles .w-9.w-fix {
+    width: 175px
+}
+
+.waffles .w-9.w-fix.w-alpha {
+    float: left;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-9.w-fix.w-omega {
+    float: right;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-9.w-fix.w-alpha ~ .w-auto, .waffles .w-9.w-fix.w-alpha ~ .w-auto.w-alpha {
+    margin-left: 198.33px
+}
+
+.waffles .w-9.w-fix.w-omega ~ .w-auto {
+    margin-right: 198.33px
+}
+
+.waffles .w-v-9 {
+    margin-top: 175px
+}
+
+.waffles .w-v_9 {
+    margin-bottom: 175px
+}
+
+.waffles .w-freeze.w-v-9 {
+    top: 175px
+}
+
+.waffles .w-freeze.w-v_9 {
+    bottom: 175px
+}
+
+.waffles .w-10.w-fix {
+    width: 210px
+}
+
+.waffles .w-10.w-fix.w-alpha {
+    float: left;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-10.w-fix.w-omega {
+    float: right;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-10.w-fix.w-alpha ~ .w-auto, .waffles .w-10.w-fix.w-alpha ~ .w-auto.w-alpha {
+    margin-left: 233.33px
+}
+
+.waffles .w-10.w-fix.w-omega ~ .w-auto {
+    margin-right: 233.33px
+}
+
+.waffles .w-v-10 {
+    margin-top: 210px
+}
+
+.waffles .w-v_10 {
+    margin-bottom: 210px
+}
+
+.waffles .w-freeze.w-v-10 {
+    top: 210px
+}
+
+.waffles .w-freeze.w-v_10 {
+    bottom: 210px
+}
+
+.waffles .w-11.w-fix {
+    width: 245px
+}
+
+.waffles .w-11.w-fix.w-alpha {
+    float: left;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-11.w-fix.w-omega {
+    float: right;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-11.w-fix.w-alpha ~ .w-auto, .waffles .w-11.w-fix.w-alpha ~ .w-auto.w-alpha {
+    margin-left: 268.33px
+}
+
+.waffles .w-11.w-fix.w-omega ~ .w-auto {
+    margin-right: 268.33px
+}
+
+.waffles .w-v-11 {
+    margin-top: 245px
+}
+
+.waffles .w-v_11 {
+    margin-bottom: 245px
+}
+
+.waffles .w-freeze.w-v-11 {
+    top: 245px
+}
+
+.waffles .w-freeze.w-v_11 {
+    bottom: 245px
+}
+
+.waffles .w-12.w-fix {
+    width: 280px
+}
+
+.waffles .w-12.w-fix.w-alpha {
+    float: left;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-12.w-fix.w-omega {
+    float: right;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-12.w-fix.w-alpha ~ .w-auto, .waffles .w-12.w-fix.w-alpha ~ .w-auto.w-alpha {
+    margin-left: 303.33px
+}
+
+.waffles .w-12.w-fix.w-omega ~ .w-auto {
+    margin-right: 303.33px
+}
+
+.waffles .w-v-12 {
+    margin-top: 280px
+}
+
+.waffles .w-v_12 {
+    margin-bottom: 280px
+}
+
+.waffles .w-freeze.w-v-12 {
+    top: 280px
+}
+
+.waffles .w-freeze.w-v_12 {
+    bottom: 280px
+}
+
+.waffles .w-13.w-fix {
+    width: 350px
+}
+
+.waffles .w-13.w-fix.w-alpha {
+    float: left;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-13.w-fix.w-omega {
+    float: right;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-13.w-fix.w-alpha ~ .w-auto, .waffles .w-13.w-fix.w-alpha ~ .w-auto.w-alpha {
+    margin-left: 373.33px
+}
+
+.waffles .w-13.w-fix.w-omega ~ .w-auto {
+    margin-right: 373.33px
+}
+
+.waffles .w-v-13 {
+    margin-top: 350px
+}
+
+.waffles .w-v_13 {
+    margin-bottom: 350px
+}
+
+.waffles .w-freeze.w-v-13 {
+    top: 350px
+}
+
+.waffles .w-freeze.w-v_13 {
+    bottom: 350px
+}
+
+.waffles .w-14.w-fix {
+    width: 420px
+}
+
+.waffles .w-14.w-fix.w-alpha {
+    float: left;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-14.w-fix.w-omega {
+    float: right;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-14.w-fix.w-alpha ~ .w-auto, .waffles .w-14.w-fix.w-alpha ~ .w-auto.w-alpha {
+    margin-left: 443.33px
+}
+
+.waffles .w-14.w-fix.w-omega ~ .w-auto {
+    margin-right: 443.33px
+}
+
+.waffles .w-v-14 {
+    margin-top: 420px
+}
+
+.waffles .w-v_14 {
+    margin-bottom: 420px
+}
+
+.waffles .w-freeze.w-v-14 {
+    top: 420px
+}
+
+.waffles .w-freeze.w-v_14 {
+    bottom: 420px
+}
+
+.waffles .w-15.w-fix {
+    width: 490px
+}
+
+.waffles .w-15.w-fix.w-alpha {
+    float: left;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-15.w-fix.w-omega {
+    float: right;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-15.w-fix.w-alpha ~ .w-auto, .waffles .w-15.w-fix.w-alpha ~ .w-auto.w-alpha {
+    margin-left: 513.33px
+}
+
+.waffles .w-15.w-fix.w-omega ~ .w-auto {
+    margin-right: 513.33px
+}
+
+.waffles .w-v-15 {
+    margin-top: 490px
+}
+
+.waffles .w-v_15 {
+    margin-bottom: 490px
+}
+
+.waffles .w-freeze.w-v-15 {
+    top: 490px
+}
+
+.waffles .w-freeze.w-v_15 {
+    bottom: 490px
+}
+
+.waffles .w-16.w-fix {
+    width: 560px
+}
+
+.waffles .w-16.w-fix.w-alpha {
+    float: left;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-16.w-fix.w-omega {
+    float: right;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-16.w-fix.w-alpha ~ .w-auto, .waffles .w-16.w-fix.w-alpha ~ .w-auto.w-alpha {
+    margin-left: 583.33px
+}
+
+.waffles .w-16.w-fix.w-omega ~ .w-auto {
+    margin-right: 583.33px
+}
+
+.waffles .w-v-16 {
+    margin-top: 560px
+}
+
+.waffles .w-v_16 {
+    margin-bottom: 560px
+}
+
+.waffles .w-freeze.w-v-16 {
+    top: 560px
+}
+
+.waffles .w-freeze.w-v_16 {
+    bottom: 560px
+}
+
+.waffles .w-17.w-fix {
+    width: 630px
+}
+
+.waffles .w-17.w-fix.w-alpha {
+    float: left;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-17.w-fix.w-omega {
+    float: right;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-17.w-fix.w-alpha ~ .w-auto, .waffles .w-17.w-fix.w-alpha ~ .w-auto.w-alpha {
+    margin-left: 653.33px
+}
+
+.waffles .w-17.w-fix.w-omega ~ .w-auto {
+    margin-right: 653.33px
+}
+
+.waffles .w-v-17 {
+    margin-top: 630px
+}
+
+.waffles .w-v_17 {
+    margin-bottom: 630px
+}
+
+.waffles .w-freeze.w-v-17 {
+    top: 630px
+}
+
+.waffles .w-freeze.w-v_17 {
+    bottom: 630px
+}
+
+.waffles .w-18.w-fix {
+    width: 700px
+}
+
+.waffles .w-18.w-fix.w-alpha {
+    float: left;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-18.w-fix.w-omega {
+    float: right;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.waffles .w-18.w-fix.w-omega ~ .w-auto, .waffles wfomegaautoomega {
+    margin-right: 723.33px
+}
+
+.waffles .w-18.w-fix.w-alpha ~ .w-auto, .waffles .w-18.w-fix.w-alpha ~ .w-auto.w-alpha {
+    margin-left: 723.33px
+}
+
+.waffles .w-v-18 {
+    margin-top: 700px
+}
+
+.waffles .w-v_18 {
+    margin-bottom: 700px
+}
+
+.waffles .w-freeze.w-v-18 {
+    top: 700px
+}
+
+.waffles .w-freeze.w-v_18 {
+    bottom: 700px
+}
