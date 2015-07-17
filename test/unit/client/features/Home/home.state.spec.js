@@ -1,9 +1,9 @@
 'use strict';
-describe('Given a Policy state', function () {
+describe('Given a Home state', function () {
     var rootScope,
         state,
         injector,
-        stateName = 'jobClip.policy';
+        stateName = 'jobClip.home';
 
     beforeEach(function bootstrapApp() {
         module('JobClipApp');
@@ -15,7 +15,7 @@ describe('Given a Policy state', function () {
             rootScope = _$rootScope_;
             state = _$state_;
             injector = _$injector_;
-            $templateCache.put('features/policy/policy.state', '');
+            $templateCache.put('features/home/home.state', '');
         }));
 
         it('should transition successfully to the state', function () {
@@ -26,7 +26,7 @@ describe('Given a Policy state', function () {
         });
 
         it('should respond to URL', function () {
-            expect(state.href(stateName)).to.equal('#/policy');
+            expect(state.href(stateName)).to.equal('#/home');
         });
     });
 });

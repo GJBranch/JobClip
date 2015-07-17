@@ -11,6 +11,18 @@ var routes = [
         url: '/',
         httpMethod: 'get',
         method: 'get'
+    },
+    {
+        name: 'userCreate',
+        url: '/user/create',
+        httpMethod: 'post',
+        method: 'post'
+    },
+    {
+        name: 'users',
+        url: '/users',
+        httpMethod: 'post',
+        method: 'post'
     }
 ];
 

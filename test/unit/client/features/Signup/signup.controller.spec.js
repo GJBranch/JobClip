@@ -1,14 +1,14 @@
 'use strict';
-describe('Given a Dashboard Controller', function () {
+describe('Given a Signup Controller', function () {
 //    load the controller's module
-    beforeEach(module('dashboard'));
+    beforeEach(module('signup'));
 
     var vm, scope;
 
     // Initialize the controller and a mock scope
     function controllerSetup($controller, $rootScope) {
         scope = $rootScope.$new();
-        vm = $controller('DashboardController', {});
+        vm = $controller('SignupController', {});
         scope.$apply();
     }
 

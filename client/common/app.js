@@ -1,47 +1,58 @@
 'use strict';
 var appDependencies = [
     'ui.router',
+    'angular-jwt',
+    'angular-storage',
     'partials',
     'posting',
-    'dashboard',
+    'home',
     'login',
-    'profile'
+    'profile',
+    'signup'
 ];
 
 var JobClip = {
     App: angular.module('JobClip', appDependencies),
     Posting: angular.module('posting', []),
-    Dashboard: angular.module('dashboard', []),
-    Login: angular.module('login', []),
+    Home: angular.module('home', []),
+    Login: angular.module('login', ['ui.router', 'angular-storage']),
+    Signup: angular.module('signup', []),
     Profile: angular.module('profile', [])
 };
 
-
-function defaultStateProvider($stateProvider, $urlRouterProvider) {
-
+function defaultStateProvider($urlRouterProvider, $httpProvider, jwtInterceptorProvider) {
     $urlRouterProvider.otherwise('/');
-
-    var jobClip = {
-        url: '/',
-        templateUrl: 'dist/app.html' //TODO: point to template in build folder depending on how this is compiled?
+    jwtInterceptorProvider.tokenGetter = function tokenGetter(store) {
+        return store.get('jwt');
     };
 
-    $stateProvider
-        .state('jobClip', jobClip);
+    $httpProvider.interceptors.push('jwtInterceptor');
 }
 
-function run($rootScope) {
-    $rootScope.$on('$stateChangeError', function(){
-       console.log('Error in state transition');
-    });
-    console.log('JobClip starting');
+function run($rootScope, $state, store, jwtHelper) {
+
+    function stateChangeStart(e, to) {
+        console.log('changing state', to);
+        if (to.data && to.data.requiresLogin) {
+            if (!store.get('jwt') || jwtHelper.isTokenExpired(store.get('jwt'))) {
+                e.preventDefault();
+                $state.go('login');
+            }
+        }
+    }
+
+    function stateChangeError() {
+        console.log('Error in state transition');
+    }
+
+    $rootScope.$on('$stateChangeStart', stateChangeStart);
+    $rootScope.$on('$stateChangeError', stateChangeError);
 }
 
 
 JobClip
     .App
-    .config(['$stateProvider', '$urlRouterProvider', defaultStateProvider])
-    .run(['$rootScope', run]);
-
+    .config(['$urlRouterProvider', '$httpProvider', 'jwtInterceptorProvider', defaultStateProvider])
+    .run(['$rootScope', '$state', 'store', 'jwtHelper', run]);
 
 window.JobClip = JobClip;

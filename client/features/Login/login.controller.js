@@ -1,30 +1,32 @@
 'use strict';
 JobClip
     .Login
-    .controller('LoginController', ['$state', 'LoginFactory', function LoginController($state, loginFactory) {
-        var _self = this;
+    .controller('LoginController', [
+        '$state',
+        '$http',
+        'store',
+        function LoginController($state, $http, store) {
+            var _self = this;
+            var login = function login() {
+                var loginOpts = {
+                    url: 'http://localhost:8001/user/create',
+                    method: 'POST',
+                    data: _self.user
+                };
 
-        var closedError = function closedError() {
-            _self.displayError = false;
-        };
+                function onSuccessfulLogin(response) {
+                    store.set('jwt', response.data.id_token);
+                    $state.go('home');
+                }
 
-        var userLogin = function userLogin(user) {
-            function onSuccess() {
-                $state.go('jobClip.dashboard');
-            }
+                function onFailedLogin(error) {
+                    alert(error.data);
+                }
 
-            function onError() {
-                _self.displayError = true;
-            }
+                $http(loginOpts)
+                    .then(onSuccessfulLogin, onFailedLogin);
+            };
 
-            loginFactory
-                .login(user)
-                .success(onSuccess)
-                .error(onError);
-        };
-
-        _self.displayError = false;
-        _self.userLogin = userLogin;
-
-        _self.closedError = closedError;
-    }]);
+            _self.user = {};
+            _self.login = login;
+        }]);

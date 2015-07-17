@@ -1,9 +1,9 @@
 'use strict';
-describe('Given a Dashboard state', function () {
+describe('Given a Signup state', function () {
     var rootScope,
         state,
         injector,
-        stateName = 'jobClip.dashboard';
+        stateName = 'jobClip.signup';
 
     beforeEach(function bootstrapApp() {
         module('JobClipApp');
@@ -15,7 +15,7 @@ describe('Given a Dashboard state', function () {
             rootScope = _$rootScope_;
             state = _$state_;
             injector = _$injector_;
-            $templateCache.put('features/dashboard/dashboard.state', '');
+            $templateCache.put('features/signup/signup.state', '');
         }));
 
         it('should transition successfully to the state', function () {
@@ -26,7 +26,7 @@ describe('Given a Dashboard state', function () {
         });
 
         it('should respond to URL', function () {
-            expect(state.href(stateName)).to.equal('#/dashboard');
+            expect(state.href(stateName)).to.equal('#/signup');
         });
     });
 });

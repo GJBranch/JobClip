@@ -1,3 +1,4 @@
+'use strict';
 JobClip
     .App
     .config(['$stateProvider',

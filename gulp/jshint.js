@@ -1,11 +1,13 @@
 var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var stylish = require('jshint-stylish');
+var options = require('./options');
 
 function jshintTask() {
     var src = [
-        'client/**/*.js',
-        'server/**/*.js'
+        options.common,
+        options.features,
+        //'server/**/*.js'
     ];
 
     return gulp

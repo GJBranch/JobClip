@@ -1,14 +1,14 @@
 'use strict';
-describe('Given a Policy Controller', function () {
+describe('Given a Home Controller', function () {
 //    load the controller's module
-    beforeEach(module('policy'));
+    beforeEach(module('home'));
 
     var vm, scope;
 
     // Initialize the controller and a mock scope
     function controllerSetup($controller, $rootScope) {
         scope = $rootScope.$new();
-        vm = $controller('PolicyController', {});
+        vm = $controller('HomeController', {});
         scope.$apply();
     }
 

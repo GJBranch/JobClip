@@ -1,39 +1,18 @@
 <div class="row">
-    <div class="col-lg-4 col-md-6 col-sm-8 col-lg-offset-4 col-md-offset-3 col-sm-offset-2">
-        <div class="login-block">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <div class="login-logo text-center">
-                        <img class="login-form-img" alt="JobClip">
-                    </div>
-
-                    <hr>
-
-                    <form id="loginForm" ng-submit="login.userLogin(login.user)">
-                        <div class="form-group">
-                            <div class="input-group">
-                                <div class="input-group-addon"><i class="fa fa-user fa-fw"></i>
-                                </div>
-                                <input type="text" id="loginUsername" ng-model="login.user.username" class="form-control" placeholder="Username" required/>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="input-group">
-                                <div class="input-group-addon"><i class="fa fa-key fa-fw"></i>
-                                </div>
-                                <input type="password" id="loginPassword" ng-model="login.user.password" class="form-control" placeholder="Password" required/>
-                            </div>
-                        </div>
-                        <div ng-show="login.displayError" style="margin-top:10px;" class="alert alert-danger alert-dismissible" role="alert">
-                            <button type="button" ng-click="login.closedError()" class="close" aria-label="Close"><span aria-hidden="true">&times;</span>
-                            </button>
-                            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-                            <span class="sr-only">Error:</span> Incorrect username/password
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-lg btn-block">Log in</button>
-                    </form>
-                </div>
+    <div class="login jumbotron center-block">
+        <h1>Login</h1>
+        <a class="btn btn-primary" href="http://localhost:8001/auth/facebook">Login with Facebook</a>
+        <form role="form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" data-ng-model="user.username" id="username" placeholder="Username">
             </div>
-        </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" data-ng-model="user.password" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-default" data-ng-click="login.login()">Submit</button>
+        </form>
+        <a data-ui-sref="signup">Click here to Signup</a>
     </div>
 </div>
