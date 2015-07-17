@@ -1,11 +1,11 @@
 <div id="JobClip">
     <div class="jumbotron centered">
-        <h1>Welcome to the security workshop!</h1>
+        <h1>Welcome to the Job Clip website!</h1>
 
-        <h2 data-ng-show="jwt">Your JWT is:</h2>
-        <pre data-ng-show="jwt" class="jwt"><code>{{jwt}}</code></pre>
-        <pre data-ng-show="jwt" class="jwt"><code>{{home.decodedJwt | json}}</code></pre>
-        <p>Click any of the buttons to call an API and get a response</p>
+        <h2 data-ng-show="home.jwt">Your JWT is:</h2>
+        <pre data-ng-show="home.jwt" class="jwt"><code>{{home.jwt}}</code></pre>
+        <pre data-ng-show="home.jwt" class="jwt"><code>{{home.decodedJwt | json}}</code></pre>
+        <!--<p>Click any of the buttons to call an API and get a response</p>-->
         <p><a class="btn btn-danger btn-lg" role="button" data-ng-click="home.logout()">Logout</a></p>
 
         <h2 data-ng-show="response">The response of calling the <span class="red">{{home.api}}</span> API is:</h2>

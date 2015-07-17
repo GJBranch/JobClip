@@ -1,9 +1,9 @@
 'use strict';
-describe('Given a Posting state', function () {
+describe('Given a Listing state', function () {
     var rootScope,
         state,
         injector,
-        stateName = 'jobClip.posting';
+        stateName = 'jobClip.listing';
 
     beforeEach(function bootstrapApp() {
         module('JobClipApp');
@@ -15,7 +15,7 @@ describe('Given a Posting state', function () {
             rootScope = _$rootScope_;
             state = _$state_;
             injector = _$injector_;
-            $templateCache.put('features/posting/posting.state', '');
+            $templateCache.put('features/listing/listing.state', '');
         }));
 
         it('should transition successfully to the state', function () {
@@ -26,7 +26,7 @@ describe('Given a Posting state', function () {
         });
 
         it('should respond to URL', function () {
-            expect(state.href(stateName)).to.equal('#/posting');
+            expect(state.href(stateName)).to.equal('#/listing');
         });
     });
 });

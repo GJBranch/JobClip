@@ -2,6 +2,7 @@
 var routes = require('./routes'),
     passport = require('passport'),
     jwt = require('jsonwebtoken'),
+    _ = require('lodash'),
     FacebookStrategy = require('passport-facebook').Strategy;
 
 var resources = {
@@ -21,19 +22,22 @@ var resources = {
 
         JobClip.get('/auth/facebook', passport.authenticate('facebook', {session: false}));
         JobClip.get('/auth/facebook/callback',
-            passport.authenticate('facebook', {failureRedirect: url + '#/error', session: false}),
+            passport.authenticate('facebook', {failureRedirect: '/#/error', session: false}),
             function redirect(req, res) {
                 var jwt = createToken(req.user);
-                res.redirect(url + '#/#jwt' + jwt);
+                console.log('user dammit', req.user);
+                //res.redirect('/#/');
+                res.redirect('/#/#jwt=' + jwt);
+
             });
 
         passport.use(new FacebookStrategy({
                 clientID: '1473242962991397',
                 clientSecret: 'c47ba63c80b02d0a281c93171e02b688',
-                callbackURL: url + '/auth/facebook/callback'
+                callbackURL: '/auth/facebook/callback'
+                //enableProof: false
             },
             function addNewUser(accessToken, refreshToken, profile, done) {
-                console.log('profile', profile);
                 var user = {
                     username: profile.displayName,
                     provider: 'facebook',
@@ -41,6 +45,7 @@ var resources = {
                 };
                 user.id = _.max(config.users, 'id').id + 1;
                 config.users.push(user);
+                console.log('users', config.users);
                 done(null, user);
             }
         ))

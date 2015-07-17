@@ -4,7 +4,7 @@ var appDependencies = [
     'angular-jwt',
     'angular-storage',
     'partials',
-    'posting',
+    'listing',
     'home',
     'login',
     'profile',
@@ -13,7 +13,7 @@ var appDependencies = [
 
 var JobClip = {
     App: angular.module('JobClip', appDependencies),
-    Posting: angular.module('posting', []),
+    Listing: angular.module('listing', []),
     Home: angular.module('home', []),
     Login: angular.module('login', ['ui.router', 'angular-storage']),
     Signup: angular.module('signup', []),
@@ -32,7 +32,6 @@ function defaultStateProvider($urlRouterProvider, $httpProvider, jwtInterceptorP
 function run($rootScope, $state, store, jwtHelper) {
 
     function stateChangeStart(e, to) {
-        console.log('changing state', to);
         if (to.data && to.data.requiresLogin) {
             if (!store.get('jwt') || jwtHelper.isTokenExpired(store.get('jwt'))) {
                 e.preventDefault();

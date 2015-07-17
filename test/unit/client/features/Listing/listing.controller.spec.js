@@ -1,14 +1,14 @@
 'use strict';
-describe('Given a Posting Controller', function () {
+describe('Given a Listing Controller', function () {
 //    load the controller's module
-    beforeEach(module('posting'));
+    beforeEach(module('listing'));
 
     var vm, scope;
 
     // Initialize the controller and a mock scope
     function controllerSetup($controller, $rootScope) {
         scope = $rootScope.$new();
-        vm = $controller('PostingController', {});
+        vm = $controller('ListingController', {});
         scope.$apply();
     }
 
