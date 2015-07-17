@@ -18,7 +18,7 @@ JobClip
                 console.log('user', _self.user);
                 function onSignupSuccess(response) {
                     store.set('jwt', response.data.id_token);
-                    $state.go('jobClip');
+                    $state.go('home');
                 }
 
                 function onSignupError(error) {

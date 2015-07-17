@@ -9,7 +9,7 @@ JobClip
             var _self = this;
             var login = function login() {
                 var loginOpts = {
-                    url: 'http://localhost:8001/user/create',
+                    url: 'http://localhost:8001/sessions/create',
                     method: 'POST',
                     data: _self.user
                 };

@@ -27,14 +27,6 @@ JobClip
 
                 $http(httpOpts).then(onSuccess, onError);
             };
-            var callAnonymousApi = function callAnonymousApi() {
-                // Just call the API as you'd do using $http
-                callApi('Anonymous', 'http://localhost:3001/api/random-quote');
-            };
-
-            var callSecuredApi = function callSecuredApi() {
-                callApi('Secured', 'http://localhost:3001/api/protected/random-quote');
-            };
 
             var logout = function logout() {
                 store.remove('jwt');
@@ -44,8 +36,6 @@ JobClip
 
             _self.jwt = store.get('jwt');
             _self.decodedJwt = _self.jwt && jwtHelper.decodeToken(_self.jwt);
-            _self.callAnonymousApi = callAnonymousApi;
-            _self.callSecuredApi = callSecuredApi;
             _self.logout = logout;
         }
     ]);

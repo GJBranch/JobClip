@@ -4,18 +4,13 @@
 
         <h2 data-ng-show="jwt">Your JWT is:</h2>
         <pre data-ng-show="jwt" class="jwt"><code>{{jwt}}</code></pre>
-        <pre data-ng-show="jwt" class="jwt"><code>{{decodedJwt | json}}</code></pre>
+        <pre data-ng-show="jwt" class="jwt"><code>{{home.decodedJwt | json}}</code></pre>
         <p>Click any of the buttons to call an API and get a response</p>
+        <p><a class="btn btn-danger btn-lg" role="button" data-ng-click="home.logout()">Logout</a></p>
 
-        <p><a class="btn btn-primary btn-lg" role="button" data-ng-click="callAnonymousApi()">Call Anonymous API</a></p>
+        <h2 data-ng-show="response">The response of calling the <span class="red">{{home.api}}</span> API is:</h2>
 
-        <p><a class="btn btn-primary btn-lg" role="button" data-ng-click="callSecuredApi()">Call Secure API</a></p>
-
-        <p><a class="btn btn-danger btn-lg" role="button" data-ng-click="logout()">Logout</a></p>
-
-        <h2 data-ng-show="response">The response of calling the <span class="red">{{api}}</span> API is:</h2>
-
-        <h3 data-ng-show="response">{{response}}</h3>
+        <h3 data-ng-show="response">{{home.response}}</h3>
     </div>
     <div data-ui-view></div>
 </div>

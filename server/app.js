@@ -1,7 +1,7 @@
 'use strict';
-var express = require('express');
-var middleware = require('./middleware');
-var resources = require('./resources');
+var express = require('express'),
+    middleware = require('./middleware'),
+    resources = require('./resources');
 
 //app
 var JobClip = express();

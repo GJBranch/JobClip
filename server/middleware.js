@@ -1,14 +1,13 @@
 'use strict';
-var express = require('express');
-var path = require('path');
-var compression = require('compression');
-var bodyParser = require('body-parser');
-//var allowCrossDomain = require('./middleware/allowCrossDomain');
-//var resourceNotFound = require('./middleware/resourceNotFound');
+var express = require('express'),
+    path = require('path'),
+    compression = require('compression'),
+    bodyParser = require('body-parser'),
+    passport = require('passport'),
+    cors = require('cors');
 
 var middleware = {
-    register : function (JobClip) {
-
+    register: function register(JobClip) {
         var sourcePath = path.dirname(__dirname),
             client = path.join(sourcePath, '/client/'),
             compressOpts = {
@@ -20,10 +19,9 @@ var middleware = {
         JobClip.use(compression(compressOpts));
         JobClip.use(express.static(client));
         JobClip.use(bodyParser.json());
-        JobClip.use(bodyParser.urlencoded());
-
-    //JobClip.use(allowCrossDomain);
-    //JobClip.use(resourceNotFound);
+        JobClip.use(bodyParser.urlencoded({extended: true}));
+        JobClip.use(cors());
+        JobClip.use(passport.initialize());
     }
 };
 

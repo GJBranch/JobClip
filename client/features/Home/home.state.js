@@ -12,5 +12,5 @@ JobClip
             };
 
             $stateProvider
-                .state('jobClip', home);
+                .state('home', home);
         }]);
