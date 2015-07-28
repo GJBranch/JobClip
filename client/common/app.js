@@ -5,6 +5,8 @@ var appDependencies = [
     'angular-storage',
     'partials',
     'listing',
+    'listings',
+    'jobs',
     'home',
     'login',
     'profile',
@@ -14,6 +16,8 @@ var appDependencies = [
 var JobClip = {
     App: angular.module('JobClip', appDependencies),
     Listing: angular.module('listing', []),
+    Listings: angular.module('listings', []),
+    Jobs: angular.module('jobs', []),
     Home: angular.module('home', []),
     Login: angular.module('login', ['ui.router', 'angular-storage']),
     Signup: angular.module('signup', []),
